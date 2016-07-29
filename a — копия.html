@@ -1,0 +1,207 @@
+<html>
+
+<
+
+<style>
+	
+.play-button{
+	position: absolute;
+	top: 50%;
+    left: 41%;
+
+	font-size: 40px;
+}
+
+.nazvanie{
+	position: absolute;
+	top: 25%;
+	right: 5%;
+	width: 100%;
+	text-align: center;
+    font-family: cursive;
+	font-size: 70px;
+}	
+.start-ekran {
+	position: absolute;
+	top: 0%;
+	right: 0%;
+	left: 0%;
+	bottom: 0%;
+	background: green ;
+	z-index: 6;
+}
+.end-ekran{
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+    font-family: cursive;
+	font-size: 60px;
+	background: red;
+	z-index: 5;
+	display: none;
+}
+
+
+	
+.block{
+	position: absolute;
+	top: 70%;
+	left: 45;
+    width: 90%;
+	height: 1%;
+    background: green;
+}		
+
+.block1{
+	position: absolute;
+	top: 64%;
+	right: 75%;
+    width: 5%;
+	height: 6%;
+    background: grey;
+}		
+.block2{
+	position: absolute;
+	top: 64%;
+	right: 65%;
+    width: 5%;
+	height: 6%;
+    background: grey;
+}		
+.block3{
+	position: absolute;
+	top: 54%;
+	right: 55%;
+    width: 5%;
+	height: 6%;
+    background: grey;
+}		
+.block4{
+	position: absolute;
+	top: 44%;
+	right: 45%;
+    width: 5%;
+	height: 6%;
+    background: grey;
+}	
+.block5{
+	position: absolute;
+	top: 64%;
+	right: 35%;
+    width: 5%;
+	height: 6%;
+    background: grey;
+}		
+
+
+
+	
+.one{
+	position: absolute;
+	top: 80%;
+	right: 50%;
+    width: 5%;
+	height: 5%;
+}	
+.two{
+	position: absolute;
+	top: 85%;
+	right: 55%;
+    width: 5%;
+	height: 5%;
+}	
+.three{
+	position: absolute;
+	top: 85%;
+	right: 45%;
+    width: 5%;
+	height: 5%;
+}	
+.four{
+	position: absolute;
+	top: 85%;
+	right: 50%;
+    width: 5%;
+	height: 5%;
+}	
+	
+	
+</style>
+	
+<script>
+
+
+
+VoenPrototip = {}; // создаем пустой объект
+VoenPrototip.crash = function(){
+	console.log('ups :(');
+}
+VoenPrototip.proizvodstvo = 'Russia';
+
+
+function Mashina (name, temp, tankSize){
+	this.name = name;
+	this.temp = temp;
+	this.tankSize = tankSize;
+}
+Mashina.prototype = VoenPrototip;
+
+
+
+function Oryzie (name, temp, dalnost){
+	this.name = name;
+	this.temp = temp;
+	this.dalnost = dalnost;
+}
+Oryzie.prototype = VoenPrototip;
+
+
+mashina1 = new Mashina('bronevik', 10, 1000 );
+
+orujie1 = new Oryzie('avtomat', 100, 150);
+orujie2 = new Oryzie('bazyka', 1, 250);
+orujie3 = new Oryzie('ognemet', 50, 40);
+orujie4 = new Oryzie('granata', 1, 50);
+orujie5 = new Oryzie('snaiperskayaVintovka', 125, 105);
+
+orujie5.psevdonim = 'snaiperka';
+orujie5.pricel = function(){
+	console.log("tochnyak");
+}
+
+orujie1.lazer = function(){
+	console.log("piooouu");
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// конструктор объектов
+function Animal(name, height, weight){
+	this.name = name;
+	this.weight = weight;
+	this.height = height;
+	this.eat = function(){
+		console.log('nyam nyam');
+	}
+}
+
+// создание объектов
+girafina = new Animal('giraf', 12, 20);
+begemotina = new Animal('begemot', 8, 150);
+akulka = new Animal('akula', 3, 100);
+kot = new Animal('cat', 1, 2);
+
+
+akulka.swim = function(){
+	console.log('bul bul');
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+</script>
+	
+</html>

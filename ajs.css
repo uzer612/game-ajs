@@ -1,0 +1,150 @@
+
+.igrok{
+	position: absolute;
+	top: 61vh;
+	left: 10vw;
+	background: blue ;
+	font-size: 40px;
+	width: 9vw;
+	height: 9vh;
+}
+
+
+.monster {
+	position: absolute;
+	top: 61vh;
+    width: 5vw;
+	height: 6vh;
+    background: red;
+}	
+
+.shell {
+	position: absolute;
+    width: 1vw;
+	height: 1vh;
+    background: black;
+}	
+
+	
+.play-button{
+	position: absolute;
+	top: 50vh;
+    left: 41vw;
+	font-size: 40px;
+}
+
+.nazvanie{
+	position: absolute;
+	top: 25%;
+	right: 5%;
+	width: 100%;
+	text-align: center;
+    font-family: cursive;
+	font-size: 70px;
+}	
+.start-ekran {
+	position: absolute;
+	top: 0%;
+	right: 0%;
+	left: 0%;
+	bottom: 0%;
+	background: green ;
+	z-index: 6;
+}
+.end-ekran{
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+    font-family: cursive;
+	font-size: 60px;
+	background: red;
+	z-index: 5;
+	display: none;
+}
+
+
+	
+.block{
+	position: absolute;
+	top: 70%;
+	left: 45;
+    width: 90%;
+	height: 1%;
+    background: green;
+}		
+
+.block1{
+	position: absolute;
+	top: 64%;
+	right: 75%;
+    width: 5%;
+	height: 6%;
+    background: grey;
+}		
+.block2{
+	position: absolute;
+	top: 64%;
+	right: 65%;
+    width: 5%;
+	height: 6%;
+    background: grey;
+}		
+.block3{
+	position: absolute;
+	top: 54%;
+	right: 55%;
+    width: 5%;
+	height: 6%;
+    background: grey;
+}		
+.block4{
+	position: absolute;
+	top: 44%;
+	right: 45%;
+    width: 5%;
+	height: 6%;
+    background: grey;
+}	
+.block5{
+	position: absolute;
+	top: 64%;
+	right: 35%;
+    width: 5%;
+	height: 6%;
+    background: grey;
+}		
+
+
+	
+.one{
+	position: absolute;
+	top: 80%;
+	right: 50%;
+    width: 5%;
+	height: 5%;
+}	
+.two{
+	position: absolute;
+	top: 85%;
+	right: 55%;
+    width: 5%;
+	height: 5%;
+}	
+.three{
+	position: absolute;
+	top: 85%;
+	right: 45%;
+    width: 5%;
+	height: 5%;
+}	
+.four{
+	position: absolute;
+	top: 85%;
+	right: 50%;
+    width: 5%;
+	height: 5%;
+}	
+	
