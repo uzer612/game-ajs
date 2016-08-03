@@ -7,6 +7,7 @@
 	font-size: 40px;
 	width: 9vw;
 	height: 9vh;
+
 }
 
 
@@ -15,14 +16,16 @@
 	top: 61vh;
     width: 5vw;
 	height: 6vh;
-    background: red;
+	background-image: url('vrag.jpg');
+
 }	
 
 .shell {
 	position: absolute;
     width: 1vw;
 	height: 1vh;
-    background: black;
+	background-image: url('pulya.jpg');
+
 }	
 
 	
