@@ -14,24 +14,26 @@
 .monster {
 	position: absolute;
 	top: 61vh;
-    width: 5vw;
-	height: 6vh;
-	background-image: url('vrag.jpg');
+    width: 8vw;
+	height: 8vh;
+	background-image: url('vrag.png');
+	background-size: 100% 100%;
 
 }	
 
 .shell {
 	position: absolute;
-    width: 1vw;
-	height: 1vh;
-	background-image: url('pulya.jpg');
+    width: 2vw;
+	height: 2vh;
+	background-image: url('pulya.png');
+	background-size: 100% 100%;
 
 }	
 
 	
 .play-button{
 	position: absolute;
-	top: 50vh;
+	top: 45vh;
     left: 41vw;
 	font-size: 40px;
 }
@@ -51,8 +53,10 @@
 	right: 0%;
 	left: 0%;
 	bottom: 0%;
-	background: green ;
 	z-index: 6;
+	background-image: url('fon.png');
+	background-size: 100% 100%;
+
 }
 .end-ekran{
 	position: absolute;
