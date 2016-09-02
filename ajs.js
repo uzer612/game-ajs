@@ -62,10 +62,10 @@ player.step = function(x){
 	document.getElementById("player-id").style.left = player.left + 'vw';
 	
 	if (x == 'left'){
-		document.getElementById("player-id").style.borderRadius = '100px 0 0 0';	
+		document.getElementById('player-id').style.backgroundImage = 'url("player.png")';
 		
 	} else {
-		document.getElementById("player-id").style.borderRadius = '0 100px 0 0';
+		document.getElementById('player-id').style.backgroundImage = 'url("player-right.png")';
 	}
 	
 	// проверка столкновения

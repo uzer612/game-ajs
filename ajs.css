@@ -3,11 +3,11 @@
 	position: absolute;
 	top: 61vh;
 	left: 10vw;
-	background: blue ;
 	font-size: 40px;
 	width: 9vw;
 	height: 9vh;
-
+	background-image: url('player.png');
+	background-size: 100% 100%;
 }
 
 
@@ -29,6 +29,7 @@
 	background-size: 100% 100%;
 
 }	
+
 
 	
 .play-button{
@@ -72,6 +73,14 @@
 	display: none;
 }
 
+.trava{
+	position: absolute;
+	top: 60%;
+	left: 5;
+    width: 90%;
+	height: 15%;
+    background-image: url('задний план.png');	
+}
 
 	
 .block{
