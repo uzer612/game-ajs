@@ -190,8 +190,12 @@ function Shell (top, left, direction){
 	// в свойство divElem кладем созданный html-элемент (получается <div></div>)
 	this.divElem = document.createElement('div');
 	
-	// созданному элементу добавляем класс
-	this.divElem.className = "shell";
+	if (this.direction == 'left'){
+		// созданному элементу добавляем класс
+		this.divElem.className = "shell-left";
+	} else {
+		this.divElem.className = "shell";	
+	}
 	
 	// запихиваем внутрь элемента div-place созданный ранее элемент
 	document.getElementById("div-place").appendChild( this.divElem );
