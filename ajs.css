@@ -1,3 +1,21 @@
+body {
+	background-image: url('gameAjs.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	
+}
+
+
+.trava{
+	position: absolute;
+	top: 61vh;
+	left: 10vw;
+	font-size: 40px;
+	background-image: url('ajs-player.png');
+	background-size: 100% 100%;
+}
+
 
 .igrok{
 	position: absolute;
@@ -6,7 +24,7 @@
 	font-size: 40px;
 	width: 9vw;
 	height: 9vh;
-	background-image: url('player.png');
+	background-image: url('ajs-player.png');
 	background-size: 100% 100%;
 }
 
@@ -17,6 +35,16 @@
     width: 8vw;
 	height: 8vh;
 	background-image: url('vrag.png');
+	background-size: 100% 100%;
+
+}	
+
+.monster2 {
+	position: absolute;
+	top: 61vh;
+    width: 8vw;
+	height: 8vh;
+	background-image: url('nazemniyvrag.png');
 	background-size: 100% 100%;
 
 }	
@@ -85,7 +113,7 @@
 	left: 5;
     width: 90%;
 	height: 15%;
-    background-image: url('задний план.png');	
+    background-image: url('');	
 }
 
 	

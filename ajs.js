@@ -62,10 +62,10 @@ player.step = function(x){
 	document.getElementById("player-id").style.left = player.left + 'vw';
 	
 	if (x == 'left'){
-		document.getElementById('player-id').style.backgroundImage = 'url("player.png")';
+		document.getElementById('player-id').style.backgroundImage = 'url("ajs-player-left.png")';
 		
 	} else {
-		document.getElementById('player-id').style.backgroundImage = 'url("player-right.png")';
+		document.getElementById('player-id').style.backgroundImage = 'url("ajs-player.png")';
 	}
 	
 	// проверка столкновения
@@ -171,7 +171,35 @@ function Monster (name, top, left){
 	// устанавливаем див-элементу позицию
 	this.divElem.style.top = this.top + 'vh';
 	this.divElem.style.left = this.left + 'vw';
+}
 
+
+
+
+function MonsterNazemniy (name, top, left){
+	// записывваем в свойства создаваемого объекта то что передано в параметрах (то есть в скобках)
+	this.name = name;
+	this.top = top;
+	this.left = left;
+	// свойство живости вначале устанавливаем в Правду
+	this.live = true;
+	// создается метод-функция для выстрела
+	this.fire = function(){
+		console.log('pif paf');
+	}
+	
+	// в свойство divElem кладем созданный html-элемент (получается <div></div>)
+	this.divElem = document.createElement('div');
+	
+	// созданному элементу добавляем класс (получается <div class="monster"></div>)
+	this.divElem.className = "monster2";
+	
+	// запихиваем внутрь уже заготовленного элемента div-place созданный только что div-элемент
+	document.getElementById("div-place").appendChild( this.divElem );
+	
+	// устанавливаем див-элементу позицию
+	this.divElem.style.top = this.top + 'vh';
+	this.divElem.style.left = this.left + 'vw';
 }
 
 // конструктор препятствий
@@ -232,13 +260,12 @@ player.checkPosition = function(){
 }
 
 
-
-
-
 ppk = new Monster ('ppk', 20, 30);
-ppk2 = new Monster ('ppk', 66, 50);
 ppk3 = new Monster ('ppk', 40, 90);
 
+ppk = new MonsterNazemniy ('ppk', 63, 30);
+ppk2 = new MonsterNazemniy ('ppk', 63, 50);
+ppk3 = new MonsterNazemniy ('ppk', 63, 90);
 
 
 
